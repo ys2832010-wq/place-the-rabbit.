@@ -1,0 +1,8 @@
+import random 
+print("Welcom to (whose wallet?)\n You will give me a list of names, and I will pick a person to py ")
+name_people=input("IF you are ready, Enter the names separated by a comma:")
+name=name_people.split(",")
+length=len(name)-1
+random_number=random.randint(0,length)
+random_person=name[random_number]
+print(f"Please ask ({random_person}) to take his wallet out. Dinner is on him")
